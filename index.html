@@ -20,45 +20,43 @@
 
 		<main class="content">
 			<!-- User Input -->
-			<section class="content__section content__section--user-input">
+			<section class="content__section content__section--inputs">
 				<!-- Bill -->
-				<div class="content__input-section">
-					<label class="content__input-label" for="bill">Bill</label>
-					<div class="content__input">
+				<div class="input">
+					<label class="input__label" for="bill">Bill</label>
+					<div class="input__field">
 						<img
-							class="content__input-image"
+							class="input__image"
 							src="./images/icon-dollar.svg"
 							alt=""
 						/>
-						<input class="content__input-field" id="bill" type="number" />
+						<input class="input__number" id="bill" type="number" />
 					</div>
 				</div>
 
 				<!-- Tip Selection -->
-				<div class="content__input-section content__input-section--tips">
-					<label class="content__input-label">Select Tip %</label>
-					<div class="content__input">
-						<button class="content__input-tip">5%</button>
-						<button class="content__input-tip">10%</button>
-						<button class="content__input-tip">15%</button>
-						<button class="content__input-tip">25%</button>
-						<button class="content__input-tip">50%</button>
-						<input class="content__input-tip content__input-tip--custom" type="number" placeholder="Custom"></input>
+				<div class="select">
+					<label class="select__label">Select Tip %</label>
+					<div class="select__btns">
+						<button class="select__btn">5%</button>
+						<button class="select__btn">10%</button>
+						<button class="select__btn">15%</button>
+						<button class="select__btn">25%</button>
+						<button class="select__btn">50%</button>
+						<input class="select__btn select__btn--custom" type="number" placeholder="Custom"></input>
 					</div>
 				</div>
 
 				<!-- # of people -->
-				<div class="content__input-section">
-					<label class="content__input-label" for="people"
-						>Number of People</label
-					>
-					<div class="content__input">
+        <div class="input">
+					<label class="input__label" for="people">Number of People</label>
+					<div class="input__field">
 						<img
-							class="content__input-image"
+							class="input__image"
 							src="./images/icon-person.svg"
 							alt=""
 						/>
-						<input class="content__input-field" id="people" type="number" />
+						<input class="input__number" id="people" type="number" />
 					</div>
 				</div>
 			</section>
@@ -66,31 +64,32 @@
 			<!-- Results -->
 			<section class="content__section content__section--results">
         <!-- Tip Amount per Person -->
-        <div class="content__result-row">
-          <div class="content__result-labels">
-            <h2>Tip Amount</h2>
-            <p>/ person</p>
+        <div class="result">
+          <div class="result__labels">
+            <p class="result__label">Tip Amount</p>
+            <p class="result__sublabel">/ person</p>
           </div>
-          <p class="content__result">$0.00</p>
+          <p class="result__amount result__amount--tip">$0.00</p>
         </div>
 
-        <!-- Total Amount per Person -->
-        <div class="content__result-row">
-          <div class="content__result-labels">
-            <h2>Total</h2>
-            <p>/ person</p>
+        <div class="result">
+          <div class="result__labels">
+            <p class="result__label">Total</p>
+            <p class="result__sublabel">/ person</p>
           </div>
-          <p class="content__result">$0.00</p>
+          <p class="result__amount result__amount--total">$0.00</p>
         </div>
-        <button class="content__reset">reset</button>
+
+        <button class="result__reset-btn">reset</button>
       </section>
 		</main>
-
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
 	</body>
 </html>
+
+
+<!-- <div class="attribution">
+  Challenge by
+  <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="https://github.com/cnguyen-13">Christian Nguyen</a>.
+</div> -->
