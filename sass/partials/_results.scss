@@ -1,0 +1,35 @@
+.result {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	&__labels {
+	}
+
+	&__label {
+		font-weight: bold;
+		color: $color__white;
+	}
+
+	&__sublabel {
+		color: $color__neutral--dgc2;
+	}
+
+	&__amount {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__reset-btn {
+		width: 100%;
+		background-color: $color__primary;
+		color: $color__neutral--vdc;
+		border: none;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		font-weight: bold;
+		border-radius: $br-small;
+		padding: 0.5rem;
+	}
+}

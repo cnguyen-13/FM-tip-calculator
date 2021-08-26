@@ -1,8 +1,18 @@
 .content {
-	background-color: white;
-	padding: 2rem;
-	border-radius: 2rem;
+	background-color: $color__white;
+	padding: 1.5rem;
+	border-radius: $br-large $br-large 0 0;
 
 	&__section {
+		&--inputs {
+			padding: 0.5rem;
+		}
+
+		&--results {
+			color: $color__primary;
+			background-color: $color__neutral--vdc;
+			padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+			border-radius: $br-medium;
+		}
 	}
 }
