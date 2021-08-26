@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style/styles.min.css">
 		<link
 			rel="icon"
 			type="image/png"
@@ -14,8 +14,8 @@
 	</head>
 
 	<body>
-		<header class="logo">
-			<img class="logo__image" src="./images/logo.svg" alt="" />
+		<header class="header">
+			<img class="header__logo" src="./images/logo.svg" alt="" />
 		</header>
 
 		<main class="content">
@@ -40,7 +40,7 @@
 					<div class="select__btns">
 						<button class="select__btn">5%</button>
 						<button class="select__btn">10%</button>
-						<button class="select__btn">15%</button>
+						<button class="select__btn select__btn--active">15%</button>
 						<button class="select__btn">25%</button>
 						<button class="select__btn">50%</button>
 						<input class="select__btn select__btn--custom" type="number" placeholder="Custom"></input>
