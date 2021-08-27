@@ -17,12 +17,13 @@ $font-family: "Space Mono", monospace;
 $font-size__input: 1.5rem;
 
 //Viewport Widths
-$viewport-width__mobile: 375px;
-$viewport-width__tablet: 768px;
-$viewport-width__desktop: 1440px;
+$viewport-width__mobile: 23.4375rem;
+$viewport-width__tablet: 48rem;
+$viewport-width__desktop: 90rem;
 
 //Max Widths
-$max-width__content: 1200px;
+$max-width__content--tablet: 40.625rem;
+$max-width__content--desktop: 62.5rem;
 
 //Misc
 $br-small: 0.25rem;

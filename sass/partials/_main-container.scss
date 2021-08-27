@@ -1,7 +1,11 @@
 .content {
 	background-color: $color__white;
 	padding: 1.5rem;
-	border-radius: $br-large $br-large 0 0;
+	padding-bottom: 2.5rem;
+	border-radius: $br-large $br-large;
+	max-width: $max-width__content--tablet;
+	margin: 0 auto;
+	margin-bottom: 4rem;
 
 	&__section {
 		&--inputs {
@@ -23,7 +27,7 @@
 
 @media (min-width: $viewport-width__desktop) {
 	.content {
-		max-width: 1000px;
+		max-width: $max-width__content--desktop;
 		margin: 0 auto;
 		padding: 2rem;
 		display: flex;
