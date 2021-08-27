@@ -1,8 +1,11 @@
-.result {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 1.5rem;
+.results {
+	&__result {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
 	&__labels {
 	}
 
@@ -31,5 +34,16 @@
 		font-weight: bold;
 		border-radius: $br-small;
 		padding: 0.5rem;
+	}
+}
+
+@media (min-width: $viewport-width__desktop) {
+	.results {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		&__amount {
+			font-size: 2.8rem;
+		}
 	}
 }

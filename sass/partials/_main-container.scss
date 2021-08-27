@@ -6,6 +6,9 @@
 	&__section {
 		&--inputs {
 			padding: 0.5rem;
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
 		}
 
 		&--results {
@@ -13,6 +16,34 @@
 			background-color: $color__neutral--vdc;
 			padding: 2.5rem 1.5rem 1.5rem 1.5rem;
 			border-radius: $br-medium;
+		}
+	}
+}
+
+@media (min-width: $viewport-width__desktop) {
+	.content {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 2rem;
+		display: flex;
+		justify-content: space-between;
+		gap: 3rem;
+		border-radius: $br-large;
+
+		&__section {
+			flex: 1;
+
+			&--inputs {
+				display: flex;
+				flex-direction: column;
+				padding: 1rem;
+			}
+			&--results {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+			}
 		}
 	}
 }

@@ -8,3 +8,14 @@
 body {
 	background-color: $color__neutral--lgc1;
 }
+
+@media (min-width: $viewport-width__desktop) {
+	body {
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+	}
+}
