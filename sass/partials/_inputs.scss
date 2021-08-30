@@ -4,11 +4,8 @@
 		font-weight: 700;
 		display: block;
 		margin-bottom: 0.5rem;
-
-		&--people {
-			display: flex;
-			justify-content: space-between;
-		}
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__error {

@@ -23,7 +23,10 @@
 			<section class="content__section content__section--inputs">
 				<!-- Bill -->
 				<div class="input">
-					<label class="input__label" for="bill">Bill</label>
+					<label class="input__label" for="bill">
+            <span class="input__normal-label">Bill</span>
+            <span class="input__error" id="error-negative-bill">Can't be negative</span>
+          </label>
 					<div class="input__field">
 						<img
 							class="input__image"
@@ -49,7 +52,7 @@
 
 				<!-- # of people -->
         <div class="input">
-					<label class="input__label input__label--people" for="people">
+					<label class="input__label" for="people">
             <span class="input__normal-label">Number of People</span>
             <span class="input__error" id="error-zero">Can't be zero</span>
             <span class="input__error" id="error-negative">Can't be negative</span>
@@ -100,5 +103,11 @@
     </div>
 
     <script src="./javascript/calculate.js"></script>
+    <script src="./javascript/bill.js"></script>
+    <script src="./javascript/number-inputs.js"></script>
+    <script src="./javascript/people.js"></script>
+    <script src="./javascript/tips.js"></script>
+    <script src="./javascript/results.js"></script>
+    <script src="./javascript/result-button.js"></script>
 	</body>
 </html>
