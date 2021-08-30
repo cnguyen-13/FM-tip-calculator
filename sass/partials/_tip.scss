@@ -39,11 +39,6 @@
 			background-color: $color__neutral--lgc1;
 		}
 
-		&--active {
-			color: $color__neutral--vdc;
-			background-color: $color__primary;
-		}
-
 		&--custom {
 			color: $color__neutral--vdc;
 			background-color: $color__neutral--lgc2;
@@ -62,6 +57,11 @@
 			&::placeholder {
 				color: $color__neutral--dgc1;
 			}
+		}
+
+		&--active {
+			color: $color__neutral--vdc;
+			background-color: $color__primary;
 		}
 	}
 }

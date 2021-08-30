@@ -1,22 +1,23 @@
-const bill = document.querySelector("#bill")
-const billNegativeError = document.querySelector("#error-negative-bill")
-
-function addErrors(element) {
+function addErrors(e) {
 	billNegativeError.classList.add("input__error--active")
-	element.parentElement.classList.add("input__field--error")
+	e.parentElement.classList.add("input__field--error")
 }
 
-function removeErrors(element) {
+function removeErrors(e) {
 	billNegativeError.classList.remove("input__error--active")
-	element.parentElement.classList.remove("input__field--error")
+	e.parentElement.classList.remove("input__field--error")
 }
 
 function onChangeBillInput(e) {
 	const element = e.target
 	const value = parseFloat(element.value)
 	const isNegative = value < 0
-	element.value = value.toFixed(2)
+	if (!Number.isNaN(value)) {
+		element.value = value.toFixed(2)
+	}
 	isNegative ? addErrors(element) : removeErrors(element)
+
+	resetButtonToggle()
 }
 
 bill.addEventListener("change", onChangeBillInput)

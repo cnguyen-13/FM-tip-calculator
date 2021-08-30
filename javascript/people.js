@@ -1,26 +1,5 @@
-const people = document.querySelector("#people")
-const zeroError = document.querySelector("#error-zero")
-const negativeError = document.querySelector("#error-negative")
-const decimalError = document.querySelector("#error-decimal")
-const peopleErrors = [zeroError, negativeError, decimalError]
-
-function getErrors(value) {
-	return {
-		isZero: value === 0,
-		isNegative: value < 0,
-		isDecimal: !Number.isInteger(value) && !Number.isNaN(value),
-		hasNoErrors: !this.isZero && !this.isNegative && !this.isDecimal,
-	}
-}
-
-function resetErrorMessages() {
-	for (const error of peopleErrors) {
-		error.classList.remove("input__error--active")
-	}
-}
-
 function onChangePeopleInput(e) {
-	resetErrorMessages()
+	resetPeopleErrors()
 	const element = e.target
 	const value = parseFloat(element.value)
 	const { isZero, isNegative, isDecimal } = getErrors(value)
@@ -38,6 +17,8 @@ function onChangePeopleInput(e) {
 	} else {
 		element.parentElement.classList.remove("input__field--error")
 	}
+
+	resetButtonToggle()
 }
 
 people.addEventListener("change", onChangePeopleInput)

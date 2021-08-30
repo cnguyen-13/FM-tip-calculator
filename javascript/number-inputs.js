@@ -1,5 +1,3 @@
-const numberInputs = document.querySelectorAll(".input__number")
-
 function onClickNumberInput(e) {
 	e.target.parentElement.classList.add("input__field--active")
 }
