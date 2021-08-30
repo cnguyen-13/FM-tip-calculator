@@ -28,15 +28,24 @@
 
 	&__reset-btn {
 		width: 100%;
-		background-color: $color__primary;
+		background-color: $color__neutral--dgc1;
 		color: $color__neutral--vdc;
 		border: none;
-		cursor: pointer;
 		text-transform: uppercase;
 		font-size: 1.25rem;
 		font-weight: bold;
 		border-radius: $br-small;
 		padding: 0.5rem;
+		transition: background-color 0.2s ease-out;
+
+		&--activable {
+			cursor: pointer;
+			background-color: $color__primary;
+
+			&:hover {
+				background-color: $color__neutral--lgc1;
+			}
+		}
 	}
 }
 

@@ -4,6 +4,20 @@
 		font-weight: 700;
 		display: block;
 		margin-bottom: 0.5rem;
+
+		&--people {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__error {
+		color: $color__error;
+		display: none;
+
+		&--active {
+			display: inline;
+		}
 	}
 
 	&__field {
@@ -11,19 +25,34 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: $color__neutral--lgc2;
+		border: 2px solid $color__neutral--lgc2;
 		border-radius: $br-small;
 		padding: 0.5rem 1.25rem;
+		transition: border-color 0.2s ease-out;
+
+		&--active {
+			border-color: $color__primary;
+		}
+
+		&--error {
+			border-color: $color__error;
+		}
 	}
 
 	&__number {
+		cursor: pointer;
 		color: $color__neutral--vdc;
 		background-color: transparent;
-		width: 90%;
+		width: 99%;
 		display: block;
 		text-align: right;
 		border: none;
 		font-size: $font-size__input;
 		font-weight: 700;
+
+		&:focus {
+			outline: none;
+		}
 
 		&::-webkit-outer-spin-button,
 		&::-webkit-inner-spin-button {

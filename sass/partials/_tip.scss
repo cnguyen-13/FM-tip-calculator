@@ -25,6 +25,7 @@
 		text-align: center;
 		cursor: pointer;
 		font-weight: bold;
+		transition: color 0.2s ease-out, background-color 0.2s ease-out;
 
 		&::-webkit-outer-spin-button,
 		&::-webkit-inner-spin-button {
@@ -33,13 +34,30 @@
 			margin: 0;
 		}
 
+		&:hover {
+			color: $color__neutral--vdc;
+			background-color: $color__neutral--lgc1;
+		}
+
 		&--active {
 			color: $color__neutral--vdc;
 			background-color: $color__primary;
 		}
 
 		&--custom {
+			color: $color__neutral--vdc;
 			background-color: $color__neutral--lgc2;
+			border: 2px solid transparent;
+			transition: border 0.2s ease-out;
+
+			&:hover {
+				background-color: $color__neutral--lgc2;
+			}
+
+			&:focus {
+				outline: none;
+				border: 2px solid $color__primary;
+			}
 
 			&::placeholder {
 				color: $color__neutral--dgc1;

@@ -30,7 +30,7 @@
 							src="./images/icon-dollar.svg"
 							alt=""
 						/>
-						<input class="input__number" id="bill" type="number" />
+						<input class="input__number" id="bill" type="number" placeholder="0"/>
 					</div>
 				</div>
 
@@ -40,7 +40,7 @@
 					<div class="select__btns">
 						<button class="select__btn">5%</button>
 						<button class="select__btn">10%</button>
-						<button class="select__btn select__btn--active">15%</button>
+						<button class="select__btn">15%</button>
 						<button class="select__btn">25%</button>
 						<button class="select__btn">50%</button>
 						<input class="select__btn select__btn--custom" type="number" placeholder="Custom"></input>
@@ -49,14 +49,19 @@
 
 				<!-- # of people -->
         <div class="input">
-					<label class="input__label" for="people">Number of People</label>
+					<label class="input__label input__label--people" for="people">
+            <span class="input__normal-label">Number of People</span>
+            <span class="input__error" id="error-zero">Can't be zero</span>
+            <span class="input__error" id="error-negative">Can't be negative</span>
+            <span class="input__error" id="error-decimal">Can't be decimal</span>
+          </label>
 					<div class="input__field">
 						<img
 							class="input__image"
 							src="./images/icon-person.svg"
 							alt=""
 						/>
-						<input class="input__number" id="people" type="number" />
+						<input class="input__number" id="people" type="number" placeholder="0"/>
 					</div>
 				</div>
 			</section>
@@ -70,7 +75,7 @@
               <p class="results__label">Tip Amount</p>
               <small class="results__sublabel">/ person</small>
             </div>
-            <p class="results__amount results__amount--tip">$4.27</p>
+            <p class="results__amount results__amount--tip">$0.00</p>
           </div>
   
           <div class="results__result">
@@ -78,7 +83,7 @@
               <p class="results__label">Total</p>
               <small class="results__sublabel">/ person</small>
             </div>
-            <p class="results__amount results__amount--total">$32.79</p>
+            <p class="results__amount results__amount--total">$0.00</p>
           </div>
         </section>
         
@@ -86,13 +91,14 @@
         <button class="results__reset-btn">reset</button>
       </section>
 		</main>
+
+    <div class="attribution">
+      Challenge by
+      <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/cnguyen-13/FM-tip-calculator">Christian Nguyen</a>.
+    </div>
+
+    <script src="./javascript/calculate.js"></script>
 	</body>
 </html>
-
-
-<!-- <div class="attribution">
-  Challenge by
-  <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-    >Frontend Mentor</a
-  >. Coded by <a href="https://github.com/cnguyen-13">Christian Nguyen</a>.
-</div> -->

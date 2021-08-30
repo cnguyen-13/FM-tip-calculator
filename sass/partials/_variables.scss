@@ -7,6 +7,7 @@ $color__neutral--dgc1: hsl(186, 14%, 43%);
 $color__neutral--dgc2: hsl(184, 14%, 56%);
 $color__neutral--lgc1: hsl(185, 41%, 84%);
 $color__neutral--lgc2: hsl(189, 41%, 97%);
+$color__error: red;
 $color__white: hsl(0, 0%, 100%);
 $color__attribution: hsl(228, 45%, 44%);
 
@@ -15,6 +16,7 @@ $font-family: "Space Mono", monospace;
 
 //Font Sizes
 $font-size__input: 1.5rem;
+$font-size__attribution: 0.75rem;
 
 //Viewport Widths
 $viewport-width__mobile: 23.4375rem;
